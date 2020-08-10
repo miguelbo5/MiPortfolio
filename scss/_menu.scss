@@ -1,5 +1,4 @@
 //Boton de menu
-@import "config";
 
 .menu-btn {
   position: absolute;
@@ -13,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut();
   }
 
@@ -42,7 +41,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.96;
   visibility: hidden;
 
   &.show {
@@ -88,7 +87,8 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("/dist/img/miguel.jpg");
+      background: url("/dist/img/foto_mia_buena_recortada.jpg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -111,12 +111,12 @@
     text-transform: uppercase;
     padding: 1rem;
     font-weight: 300;
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
-    &:hover{
-        color: $secondary-color;
+    &:hover {
+      color: $secondary-color;
     }
   }
 }
