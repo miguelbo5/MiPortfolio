@@ -34,6 +34,3 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-
-//https://www.youtube.com/watch?v=7WaohfclZRs minuto 14:21
