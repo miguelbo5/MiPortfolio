@@ -24,6 +24,7 @@ h3 {
     font-size: 6rem;
   }
   &.sm-heading {
+    width: fit-content;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
@@ -110,13 +111,104 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
-#main-footer{
+//Mis trabajos
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  img {
+    width: 100%;
+    border: 3px white solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//Pagina de contacto
+
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div{
+    font-size: 2rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover{
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span{
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+//Estilos de botones
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  @include easeOut;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($color: $primary-color, $amount: 50);
+  color: white;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($color: $primary-color, $amount: 50);
+  color: #333;
+}
+
+#main-footer {
   text-align: center;
   padding: 1rem;
   background-color: darken($color: $primary-color, $amount: 10);
   color: set-text-color($primary-color);
   height: 60px;
-  
+}
+
+//Estilo de la barra de scroll
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @import "menu";
