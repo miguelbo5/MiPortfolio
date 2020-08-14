@@ -115,6 +115,13 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects .header-item-work {
+    background: #c4c4c4;
+    color: black;
+    padding: 1px;
+    margin-bottom: 5px; }
+    .projects .header-item-work p {
+      text-align: center; }
 
 .boxes {
   display: flex;

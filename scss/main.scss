@@ -17,7 +17,7 @@ body {
 //Heading
 h1,
 h2,
-h3{
+h3 {
   margin: 0;
   font-weight: 400;
   &.lg-heading {
@@ -134,6 +134,16 @@ main {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+
+  .header-item-work {
+    background: lighten($color: $primary-color, $amount: 50);
+    color: black;
+    padding: 1px;
+    margin-bottom: 5px;
+    p {
+      text-align: center;
     }
   }
 }
