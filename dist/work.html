@@ -1,195 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/cf0bdcd7e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Mi trabajo</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://kit.fontawesome.com/cf0bdcd7e2.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <title>Mi trabajo</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            Sobre mí
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            Mi trabajo
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="work">
+    <h1 class="lg-heading">Mi <span class="text-secondary">Trabajo</span></h1>
+    <h2 class="sm-heading">
+      Mira algunos de mis proyectos...
+    </h2>
+
+    <div class="projects">
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Aplicacion de tienda (Android nativo + Java)
+          </p>
+        </div>
+        <img src="img/proyectos/captura_keycontrol_android.jpg" alt="" />
+        <a target="_blank" href="https://github.com/miguelbo5/KeyControlAndroid" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Página de estadisticas COVID
+          </p>
+        </div>
+        <img src="img/proyectos/captura_estadisticas_covid.png" alt="" />
+        <a target="_blank" href="https://miguelbo5.github.io/paginaEstadisticasCovid/index.html" class="btn-light">
+          <i class="fas fa-eye"></i> Projecto
+        </a>
+        <a target="_blank" href="https://github.com/miguelbo5/paginaEstadisticasCovid" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Aplicación CRUD de coches (Android + Firebase)
+          </p>
+        </div>
+        <img src="img/proyectos/captura_luxury_cars_android.jpg" alt="" />
+        <a target="_blank" href="https://github.com/miguelbo5/LuxuryCarsAndroid" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Este portfolio
+          </p>
+        </div>
+
+        <img src="img/proyectos/captura_portfolio.png" alt="" />
+
+        <a _blank href="https://github.com/miguelbo5/MiPortfolio" class="btn-dark">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Tienda online (Angular8 + TypeScript)
+          </p>
         </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Inicio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              Sobre mí
-            </a>
-          </li>
-          <li class="nav-item current">
-            <a href="work.html" class="nav-link">
-              Mi trabajo
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contacto
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="work">
-      <h1 class="lg-heading">Mi <span class="text-secondary">Trabajo</span></h1>
-      <h2 class="sm-heading">
-        Mira algunos de mis proyectos...
-      </h2>
-
-      <div class="projects">
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Aplicacion de tienda (Android nativo + Java)
-            </p>
-          </div>
-          <img src="img/proyectos/captura_keycontrol_android.jpg" alt="" />
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/KeyControlAndroid"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Aplicación CRUD de coches (Android + Firebase)
-            </p>
-          </div>
-          <img src="img/proyectos/captura_luxury_cars_android.jpg" alt="" />
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/LuxuryCarsAndroid"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Este portfolio
-            </p>
-          </div>
-
-          <img src="img/proyectos/captura_portfolio.png" alt="" />
-
-          <a
-            _blank
-            href="https://github.com/miguelbo5/MiPortfolio"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Tienda online (Angular8 + TypeScript)
-            </p>
-          </div>
-          <img src="img/proyectos/captura_keycontrol_angular.png" alt="" />
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/KeyControlAngular"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Aplicacion tiempo (React)
-            </p>
-          </div>
-          <img src="img/proyectos/captura_aplicacion_tiempo_react.png" alt="" />
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/aplicacionTiempoReact"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Herramienta de creación de PDFs
-            </p>
-          </div>
-          <img src="img/proyectos/captura_creacion_pdfs.png" alt="" />
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/creacionPartesPCB"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
-        <div class="item">
-          <div class="header-item-work">
-            <p>
-              Pagina web chat (JavaScript vanilla + Firebase)
-            </p>
-          </div>
-          <a target="_blank" href="https://proyecto-chat-javascript.web.app/">
-            <img
-              src="img/proyectos/captura_chat_javascript_firebase.png"
-              alt=""
-            />
-          </a>
-          <a
-            target="_blank"
-            href="https://proyecto-chat-javascript.web.app/"
-            class="btn-light"
-          >
-            <i class="fas fa-eye"></i> Projecto
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/miguelbo5/Web-de-chat-con-JavaScript"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </div>
+        <img src="img/proyectos/captura_keycontrol_angular.png" alt="" />
+        <a target="_blank" href="https://github.com/miguelbo5/KeyControlAngular" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
       </div>
-    </main>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Aplicacion tiempo (React)
+          </p>
+        </div>
+        <img src="img/proyectos/captura_aplicacion_tiempo_react.png" alt="" />
+        <a target="_blank" href="https://github.com/miguelbo5/aplicacionTiempoReact" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Herramienta de creación de PDFs
+          </p>
+        </div>
+        <img src="img/proyectos/captura_creacion_pdfs.png" alt="" />
+        <a target="_blank" href="https://github.com/miguelbo5/creacionPartesPCB" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+      <div class="item">
+        <div class="header-item-work">
+          <p>
+            Pagina web chat (JavaScript vanilla + Firebase)
+          </p>
+        </div>
+        <a target="_blank" href="https://proyecto-chat-javascript.web.app/">
+          <img src="img/proyectos/captura_chat_javascript_firebase.png" alt="" />
+        </a>
+        <a target="_blank" href="https://proyecto-chat-javascript.web.app/" class="btn-light">
+          <i class="fas fa-eye"></i> Projecto
+        </a>
+        <a target="_blank" href="https://github.com/miguelbo5/Web-de-chat-con-JavaScript" class="btn-dark">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </main>
 
-    <footer id="main-footer">
-      Copyright &copy; 2020
-    </footer>
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
